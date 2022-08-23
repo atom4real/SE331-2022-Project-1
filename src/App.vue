@@ -1,13 +1,15 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+  <div id="flashMessage" v-if="GStore.flashMessage">
+    {{ GStore.flashMessage }}
+  </div>
+  <NavBar />
   <router-view />
 </template>
 <script>
+import NavBar from './components/NavBar.vue'
 export default {
-  inject: ['GStore']
+  inject: ['GStore'],
+  components: { NavBar }
 }
 </script>
 <style>
