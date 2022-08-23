@@ -13,9 +13,9 @@
       <p>Blood Type: {{ patient.bloodType }}</p>
     </div>
   </div>
-  <button class="btn btnBack" @click="toPatientlists">
-    Back to Patient Lists
-  </button>
+      <button class="btn btnBack" @click="toPatientlists">
+      Back to Patient Lists
+    </button>
 </template>
 
 <script>
