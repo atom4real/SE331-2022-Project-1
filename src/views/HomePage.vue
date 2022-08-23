@@ -25,7 +25,7 @@
 .imgBF::before {
   position: absolute;
   background-size: cover;
-   content: "";
+  content: '';
   filter: brightness(0.3);
 }
 .head-btn {

@@ -2,7 +2,10 @@
   <div class="container">
     <h1>Doctor's Reviews</h1>
     <ReviewForm @review-submitted="addReview"></ReviewForm>
-    <ReviewList v-if="GStore.comments" :reviews="GStore.patient.comments"></ReviewList>
+    <ReviewList
+      v-if="GStore.comments"
+      :reviews="GStore.patient.comments"
+    ></ReviewList>
   </div>
   <button class="btn btnBack" @click="toPatientlists">
     Back to Patient Lists
@@ -19,7 +22,9 @@ export default {
   methods: {
     addReview(review) {
       this.GStore.comments.push(review)
-      GStore.patient.comments = GStore.comments.filter((comment) => GStore.patient.id == comment.IDpatient )
+      GStore.patient.comments = GStore.comments.filter(
+        (comment) => GStore.patient.id == comment.IDpatient
+      )
       // console.log(review)
     },
     toPatientlists() {

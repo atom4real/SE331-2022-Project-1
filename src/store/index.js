@@ -1,6 +1,6 @@
 import { reactive } from 'vue'
-export default reactive({ 
-    flashMessage: '',
-    patients: null,
-    comments: []
+export default reactive({
+  flashMessage: '',
+  patients: null,
+  comments: []
 })

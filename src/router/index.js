@@ -37,7 +37,9 @@ const routes = [
       return EventService.getPatient(to.params.id)
         .then((response) => {
           GStore.patient = response.data
-          GStore.patient.comments = GStore.comments.filter((comment) => GStore.patient.id == comment.IDpatient )
+          GStore.patient.comments = GStore.comments.filter(
+            (comment) => GStore.patient.id == comment.IDpatient
+          )
           console.log(GStore.patient.comments)
         })
         .catch((error) => {

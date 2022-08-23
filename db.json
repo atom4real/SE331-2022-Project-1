@@ -336,30 +336,6 @@
           "lotNo": "",
           "hospital": "Flowerhill Medical Center"
       }]
-    },
-    {
-      "id": 15,
-      "name": "Janine",
-      "surname": "Cassidy",
-      "homeTown": "239 Blackburn St. Alliance, OH 44601",
-      "age": "24",
-      "phone": "774-254-0529",
-      "birthday": "Friday, October 4, 1965",
-      "email": "maneesh@aol.com",
-      "height": "165",
-      "weight": "50",
-      "bloodType": "A",
-      "vaccinateStatus": "Second dose",
-      "comments": [],
-      "vaccines": [{
-          "firstDose": "Janssen",
-          "secondDose": "Moderna",
-          "firstDate": "2020-07-25 20:43:55",
-          "secondDate": "2022-07-21 07:04:10",
-          "serialNo": "936285457648552",
-          "lotNo": "",
-          "hospital": "East Valley Clinic"
-      }]
     }
   ]
 }
