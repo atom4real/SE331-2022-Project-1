@@ -41,7 +41,11 @@ const routes = [{
                     }
                 })
         },
-        children: []
+        children: [{
+            path: '',
+            name: 'PatientDetails',
+            component: PatientDetails
+        }]
     },
     {
         path: '/404/:resource',
