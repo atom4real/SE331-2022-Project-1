@@ -6,6 +6,7 @@ import NetWorkError from '@/views/NetworkError.vue'
 import HomePage from '@/views/HomePage.vue'
 import NProgress from 'nprogress'
 import EventService from '@/services/EventService.js'
+import PatientDetails from '@/views/event/PatientDetails.vue'
 import GStore from '@/store'
 const routes = [{
         path: '/',
