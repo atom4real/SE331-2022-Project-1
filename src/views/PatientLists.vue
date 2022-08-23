@@ -106,10 +106,10 @@ h1 {
   width: 70px;
   height: 70px;
   border-radius: 100%;
-  transition: 0.3s;
+  transition: .3s;
 }
 .pagination:hover {
-  transform: scale(0.9);
+  transform: scale(.9);
   box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
     0 17px 50px 0 rgba(0, 0, 0, 0.19);
   background-color: #42b883;
