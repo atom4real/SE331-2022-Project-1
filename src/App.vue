@@ -5,8 +5,21 @@
   </nav>
   <router-view />
 </template>
-
+<script>
+export default {
+  inject: ['GStore']
+}
+</script>
 <style>
+@keyframes Colorfade {
+  from {
+    background: #42b883;
+  }
+  to {
+    background: transparent;
+  }
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -15,17 +28,12 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
+h4 {
+  font-size: 20px;
 }
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+#flashMessage {
+  animation-name: Colorfade;
+  animation-duration: 3s;
 }
 @import '~bootstrap/dist/css/bootstrap.css';
 </style>
