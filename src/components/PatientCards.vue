@@ -39,7 +39,7 @@ export default {
   background-color: #42b883;
   color: white;
   font-weight: 600;
-    border: 2px solid #35495e;
+  border: 2px solid #35495e;
 }
 
 .patient-link {
