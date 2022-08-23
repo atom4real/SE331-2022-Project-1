@@ -41,7 +41,24 @@ const routes = [{
                     }
                 })
         },
-        children: []
+        children: [{
+                path: '',
+                name: 'PatientDetails',
+                component: PatientDetails
+            },
+            {
+                path: 'Vaccination',
+                name: 'VaccinationDetails',
+                props: true,
+                component: VaccinationDetails
+            },
+            {
+                path: 'doctor-comments',
+                name: 'DoctorComments',
+                props: true,
+                component: DoctorComments
+            }
+        ]
     },
     {
         path: '/404/:resource',
